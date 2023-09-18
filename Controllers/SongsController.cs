@@ -73,7 +73,7 @@ namespace Music_Library_Backend_Project.Controllers
             var song = _context.Songs.Find(id);
             if (song == null)
             {
-                return NotFound(new);
+                return NotFound();
             }
 
             _context.Songs.Remove(song);
